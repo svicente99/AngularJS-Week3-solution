@@ -14,9 +14,9 @@ const ALL="all";
 angular.module('NarrowItDownApp', [])
  .controller('NarrowItDownController', NarrowItDownController_func)
  .service('MenuSearchService', MenuSearchService_func) 
- // .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
+ .constant('ApiBasePath', "https://davids-restaurant.herokuapp.com")
  // .constant('ApiBasePath', "http://127.0.0.1/davids-restaurant")
- .constant('ApiBasePath', "http://www.supersuporte.com/teste")
+ // .constant('ApiBasePath', "http://www.supersuporte.com/teste")
  .directive('foundItems', FoundItems);
 
 function FoundItems() { 
