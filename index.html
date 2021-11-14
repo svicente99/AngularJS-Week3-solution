@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Narrow Down Your Menu Choice - Assignment 3 - Johns Hopkins University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+<body ng-app="NarrowItDownApp">
+   <div class="container" ng-controller="NarrowItDownController as search">
+    <h1>Narrow Down Your Chinese Menu Choice</h1>
+    <h3>Assignment 3 - by Sergio Vicente [Single Page Web Applications with AngularJS]</h3>
+
+	<a href="#" class="hints" title="<ol><li>some good examples to type:
+	    <span style='color:darkred'>beef | chicken | egg | vegetable</span></li>
+		<li>if you want to see the whole menu, digit this special word: <b>all</b></li>
+		<li>if you digit nothing or blank spaces, search won't be done</li>
+		<li>blank spaces are trimmed from your typing</li></ol>" 
+	 data-toggle="tooltip" data-placement="bottom" tooltip>Tips and hints</a>
+	<hr>
+	
+    <div class="form-group">
+      <input type="text" class="search" placeholder="search term" class="form-control" 
+	   ng-model="search_input" maxlength="255">
+    </div>
+    <div class="form-group narrow-button">
+      <button class="btn btn-primary" ng-click="search()">Narrow It Down For Me!</button>
+	  &nbsp;&nbsp;<span class="removed">{{ search.lastRemoved() }}</span>
+    </div>
+
+	<div class="search_result">
+      <!-- found-items it's implemented as a component -->
+      <found-items my-menu="search"></found-items>
+    </div>
+	<div class="nothing" ng-if="search.count==0">&#8618; Nothing found.</div>
+   </div>
+</body>
+</html>

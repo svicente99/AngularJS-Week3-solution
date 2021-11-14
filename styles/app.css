@@ -1,0 +1,54 @@
+body {
+  font-size: 1.2em;
+}
+#list1, #list2 {
+  float: left;
+}
+#list2 {
+  margin-left: 40px;
+}
+
+.error {
+  color: red;
+}
+
+.emptyMessage {
+	font-weight: bold;
+	color: red;
+	font-size: 1.2em;
+}
+h1 { 
+   font-family: Arial, sans-serif; 
+   color: navy;
+}
+h4 {
+   font-size: 1.6em; color: navy;
+   text-decoration: underline;
+}
+li {
+   margin-bottom: 7px;
+   font-size: 1.2em;
+}
+li > button {
+   margin-left: 6px;
+}
+button > span {
+   color: green;
+}
+
+.list {
+  max-width: 500px; 
+  min-height:300px;
+  border: solid 1px #6c757d;
+}
+
+#github {
+    position: fixed;
+    height: 50px;
+    background-color: #d0d0d0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+	padding: 10px 20px;
+}
