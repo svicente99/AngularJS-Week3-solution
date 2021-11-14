@@ -5,7 +5,7 @@ Johns Hopkins University - Coursera
 
 You may test this same code online. It's published in Github pages:
 
-https://svicente99.github.io/AngularJS-Week3-solution/
+https://svicente99.github.io/AngularJS-Week3-solution/index.html
 
 Alternative site where is it available for test:
 
