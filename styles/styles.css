@@ -105,3 +105,14 @@ span.removed { font-family: Verdana, sans-serif; font-size: 0.9em; }
   clear: both; 
   position: relative; z-index: +1; top: -50px; left: 5px;
 }
+
+#github {
+    position: fixed;
+    height: 50px;
+    background-color: #d0d0d0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+	padding: 10px 20px;
+}
